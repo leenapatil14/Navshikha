@@ -1,2 +1,0 @@
-# Navshikha
-personal blog
