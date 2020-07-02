@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Navshikha/static/css/main.a2f90616.chunk.css",
-    "main.js": "/Navshikha/static/js/main.53dd683a.chunk.js",
-    "main.js.map": "/Navshikha/static/js/main.53dd683a.chunk.js.map",
+    "main.js": "/Navshikha/static/js/main.e508629d.chunk.js",
+    "main.js.map": "/Navshikha/static/js/main.e508629d.chunk.js.map",
     "runtime-main.js": "/Navshikha/static/js/runtime-main.60e43484.js",
     "runtime-main.js.map": "/Navshikha/static/js/runtime-main.60e43484.js.map",
     "static/js/2.62003f26.chunk.js": "/Navshikha/static/js/2.62003f26.chunk.js",
     "static/js/2.62003f26.chunk.js.map": "/Navshikha/static/js/2.62003f26.chunk.js.map",
     "index.html": "/Navshikha/index.html",
-    "precache-manifest.d47c821bff5f7d3049df55be1c03f2a4.js": "/Navshikha/precache-manifest.d47c821bff5f7d3049df55be1c03f2a4.js",
+    "precache-manifest.18a4835416fff6b1b27f1856ca47e948.js": "/Navshikha/precache-manifest.18a4835416fff6b1b27f1856ca47e948.js",
     "service-worker.js": "/Navshikha/service-worker.js",
     "static/css/main.a2f90616.chunk.css.map": "/Navshikha/static/css/main.a2f90616.chunk.css.map",
     "static/js/2.62003f26.chunk.js.LICENSE.txt": "/Navshikha/static/js/2.62003f26.chunk.js.LICENSE.txt",
@@ -43,6 +43,6 @@
     "static/js/runtime-main.60e43484.js",
     "static/js/2.62003f26.chunk.js",
     "static/css/main.a2f90616.chunk.css",
-    "static/js/main.53dd683a.chunk.js"
+    "static/js/main.e508629d.chunk.js"
   ]
 }
