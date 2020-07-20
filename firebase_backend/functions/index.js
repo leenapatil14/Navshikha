@@ -67,7 +67,26 @@ const getDailyLogs=(req,res)=>{
         }
     });
 };
+const getCodes=(req,res)=>{
+    db.collection('codes').get().then((data)=>{
+        console.log(data);
+        let d=[];
+         data.forEach(x => {
+            d.push(
+                x.data()
+                
+            );
+        });
+        return res.json(d);
+    }).catch(err=>{
+        console.log(err);
+        
+        res.json({'response_code':"error","msg":"server error","code":err.code});
+        
+    });
+};
 app.get('/getProjects',getProjects);
 app.get('/getDailyLogs',getDailyLogs);
+app.get('/getCodes',getCodes);
 //app.post('/register',register);
 exports.api = functions.https.onRequest(app);
