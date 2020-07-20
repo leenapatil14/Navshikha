@@ -41,7 +41,7 @@ class ContactInfo extends Component {
                         justify="center"
                         alignItems="center" spacing={3} >
                         <Grid item xs={12} className={classes.skillsLabel}>
-                        <Link href="https://github.com/leenapatil14" >
+                        <Link href="https://www.linkedin.com/in/leenamanoharpatil/" >
                             
                             <div><LinkedInIcon fontSize="large"/></div>
                             <div className={classes.contactSection}>Connect on LinkedIn!</div>
@@ -49,7 +49,7 @@ class ContactInfo extends Component {
               </Link>
                         </Grid>
                         <Grid item xs={12} className={classes.skillsLabel}>
-                        <Link href="https://www.linkedin.com/in/leenamanoharpatil/" >
+                        <Link href="https://github.com/leenapatil14" >
                             
                             <div><GitHubIcon fontSize="large"/></div>
                             <div className={classes.contactSection}>Checkout my projects on Github</div>

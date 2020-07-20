@@ -49,8 +49,8 @@ import Typography from '@material-ui/core/Typography';
  
       },
       large:{
-        width: theme.spacing(7),
-    height: theme.spacing(7),
+        width: theme.spacing(15),
+    height: theme.spacing(15),
     margin:15
       },
       gridText:{
@@ -134,7 +134,8 @@ class Portfolio extends Component {
                 </Grid>
                 <Grid item xs={12} className={classes.gridText}>
                 
-                <Typography color="primary" variant="body2">My name is Leena Manohar Patil</Typography>
+                <Typography color="primary" variant="body2cd ..
+                ">My name is Leena Manohar Patil</Typography>
                 
                 </Grid>
                 <Grid item xs={12} className={classes.gridText}>

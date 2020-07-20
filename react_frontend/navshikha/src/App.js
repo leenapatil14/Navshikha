@@ -33,10 +33,10 @@ function App() {
         <div className={classes.root}>
         <Switch>
           {/* <Route exact path="/" component={Home}></Route> */}
-          <Route exact path="/" component={Portfolio}></Route>
-          <Route exact path="/travel" component={Travel}></Route>
-          <Route exact path="/dailylogs" component={DailyLogs}></Route>
-          <Route exact path="/algorithms" component={Algorithms}></Route>
+          <Route exact path="/Navshikha/" component={Portfolio}></Route>
+          <Route exact path="/Navshikha/travel" component={Travel}></Route>
+          <Route exact path="/Navshikha/dailylogs" component={DailyLogs}></Route>
+          <Route exact path="/Navshikha/algorithms" component={Algorithms}></Route>
         </Switch>
         </div>
         

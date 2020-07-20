@@ -13,84 +13,90 @@ import GridListTile from '@material-ui/core/GridListTile';
 
 const useStyles = theme => ({
     root: {
-      flexGrow: 1,
-      width: '100%',
-      backgroundColor: theme.palette.background.paper,
+        flexGrow: 1,
+        width: '100%',
+        backgroundColor: theme.palette.background.paper,
     },
-    cardRoot:{
-        margin:15,
+    cardRoot: {
+        margin: 15,
     },
     gridList: {
         width: '100%'
-      },
-      images:{
-          width:'100%'
-      }
-      
-    
-  });
+    },
+    images: {
+        width: '100%'
+    }
+
+
+});
 class Story extends Component {
     constructor(props) {
         super(props);
 
     }
 
-    
+
 
     render() {
-        const {classes} = this.props;
-        const story=this.props.story.story;
+        const { classes } = this.props;
+        const story = this.props.story.story;
         //console.log(story);
         return (
             <div>
 
-            <Grid item  >
-            <Card className={classes.cardRoot} >
-            <CardActionArea>
-            
-            <CardContent>
-            <Typography gutterBottom variant="h6" component="h5">
-            {story.name}
-            </Typography>
-            <Typography  color="textSecondary" component="div" >
-            {story.paragraphs.intro}
-            {story.paragraphs.details.map(data=>
-            <div key={data.desc}>
-                <br/>
-                {data.image?
-                <Grid container justify="center"
-                alignItems="center">
-                    <Grid item xs={12} md={6}>
-                    {data.desc}
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                    <img className={classes.images} src={data.image}/>
-                    </Grid>
-                </Grid>
-                :
-                <Grid container justify="center"
-                alignItems="center">
-                    <Grid item xs={12} md={12}>
-                    {data.desc}
-                    </Grid>
-                    
-                </Grid>
-                }
-                
-                </div>)}
-            </Typography>
-            <GridList  className={classes.gridList} cols={3}>
-        {story.images.map((tile) => (
-          <GridListTile key={tile} >
-            <img src={tile}  />
-          </GridListTile>
-        ))}
-      </GridList>
-            </CardContent>
-            </CardActionArea>
+                <Grid item  >
+                    <Card className={classes.cardRoot} >
+                        <CardActionArea>
 
-            </Card>
-            </Grid>
+                            <CardContent>
+                                <Typography gutterBottom variant="body1" component="div">
+                                    {story.name}
+                                </Typography>
+                                <Typography color="textSecondary" variant="body2" component="div" >
+                                    {story.paragraphs.intro}
+                                </Typography>
+                                {story.paragraphs.details.map(data =>
+                                    <div key={data.desc}>
+                                        <br />
+                                        {data.image ?
+                                            <Grid container justify="center"
+                                                alignItems="center">
+                                                <Grid item xs={12} md={6}>
+                                                    <Typography color="textSecondary" variant="body2"  >
+                                                        {data.desc}
+                                                    </Typography>
+                                                </Grid>
+                                                <Grid item xs={12} md={6}>
+                                                    <img className={classes.images} src={data.image} />
+                                                </Grid>
+                                            </Grid>
+                                            :
+                                            <Grid container justify="center"
+                                                alignItems="center">
+                                                <Grid item xs={12} md={12}>
+                                                    <Typography color="textSecondary" variant="body2" component="div" >
+                                                        {data.desc}
+                                                    </Typography>
+
+                                                </Grid>
+
+                                            </Grid>
+                                        }
+
+                                    </div>)}
+
+                                <GridList className={classes.gridList} cols={3}>
+                                    {story.images.map((tile) => (
+                                        <GridListTile key={tile} >
+                                            <img src={tile} />
+                                        </GridListTile>
+                                    ))}
+                                </GridList>
+                            </CardContent>
+                        </CardActionArea>
+
+                    </Card>
+                </Grid>
             </div>
         );
     }

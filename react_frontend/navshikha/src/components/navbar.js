@@ -180,22 +180,24 @@ const {classes} = this.props;
                     <ListItemIcon className={classes.toolbarText}><HomeIcon /> </ListItemIcon>
                     <ListItemText classes={{primary:classes.listItemText}} primary="Home" />
                   </ListItem> */}
-                  <ListItem button key="Portfolio" component={Link} to="/">
+                  <ListItem button key="Portfolio" component={Link} to="/Navshikha/">
                     <ListItemIcon className={classes.toolbarText}><AccountCircleTwoToneIcon /> </ListItemIcon>
                     <ListItemText classes={{primary:classes.listItemText}} primary="Portfolio" />
                   </ListItem>
-                  <ListItem button key="Travel" component={Link} to="/travel">
-                    <ListItemIcon className={classes.toolbarText}><FlightTwoToneIcon /> </ListItemIcon>
-                    <ListItemText classes={{primary:classes.listItemText}} primary=" Stories" />
-                  </ListItem>
-                  <ListItem button key="Daily" component={Link} to="/dailylogs">
-                    <ListItemIcon className={classes.toolbarText}><BookTwoToneIcon /> </ListItemIcon>
-                    <ListItemText classes={{primary:classes.listItemText}} primary="Daily Logs" />
-                  </ListItem>
-                  <ListItem button key="Leetcode" component={Link} to="/algorithms">
+                  <ListItem button key="Leetcode" component={Link} to="/Navshikha/algorithms">
                     <ListItemIcon className={classes.toolbarText}><CodeTwoToneIcon /> </ListItemIcon>
                     <ListItemText classes={{primary:classes.listItemText}} primary="Leetcode Solutions" />
                   </ListItem>
+                  <ListItem button key="Daily" component={Link} to="/Navshikha/dailylogs">
+                    <ListItemIcon className={classes.toolbarText}><BookTwoToneIcon /> </ListItemIcon>
+                    <ListItemText classes={{primary:classes.listItemText}} primary="Daily Logs" />
+                  </ListItem>
+                  <ListItem button key="Travel" component={Link} to="/Navshikha/travel">
+                    <ListItemIcon className={classes.toolbarText}><FlightTwoToneIcon /> </ListItemIcon>
+                    <ListItemText classes={{primary:classes.listItemText}} primary=" Stories" />
+                  </ListItem>
+                  
+                  
                 
               </List>
 
