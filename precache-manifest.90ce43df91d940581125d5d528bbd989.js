@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04fde74fbda5d82c562e0f2f5b4abb9a",
+    "revision": "d472357fe872d66667238b4c870e34d1",
     "url": "/Navshikha/index.html"
   },
   {
-    "revision": "b01e8045d61d8b6dce8c",
-    "url": "/Navshikha/static/css/main.201f01ef.chunk.css"
+    "revision": "60ef0a7f9da3bc54fd8d",
+    "url": "/Navshikha/static/css/main.18133bb5.chunk.css"
   },
   {
-    "revision": "bd0391024ab7de9b914a",
-    "url": "/Navshikha/static/js/2.ae98934f.chunk.js"
+    "revision": "ed8d1d629e1f1ecefa09",
+    "url": "/Navshikha/static/js/2.9eae1459.chunk.js"
   },
   {
     "revision": "90377550dd86ed303dd30d8f487872de",
-    "url": "/Navshikha/static/js/2.ae98934f.chunk.js.LICENSE.txt"
+    "url": "/Navshikha/static/js/2.9eae1459.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b01e8045d61d8b6dce8c",
-    "url": "/Navshikha/static/js/main.4e77712c.chunk.js"
+    "revision": "60ef0a7f9da3bc54fd8d",
+    "url": "/Navshikha/static/js/main.e8f03789.chunk.js"
   },
   {
     "revision": "d4aede3515dca7f22b62",
