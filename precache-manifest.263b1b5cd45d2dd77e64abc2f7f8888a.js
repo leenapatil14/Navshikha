@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d472357fe872d66667238b4c870e34d1",
+    "revision": "a11a7c9ebe2ac8bb2a29ef3728df8c4f",
     "url": "/Navshikha/index.html"
   },
   {
-    "revision": "60ef0a7f9da3bc54fd8d",
-    "url": "/Navshikha/static/css/main.18133bb5.chunk.css"
+    "revision": "2a49f408aac9b65ffb1f",
+    "url": "/Navshikha/static/css/main.11fee1a0.chunk.css"
   },
   {
     "revision": "ed8d1d629e1f1ecefa09",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Navshikha/static/js/2.9eae1459.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60ef0a7f9da3bc54fd8d",
+    "revision": "2a49f408aac9b65ffb1f",
     "url": "/Navshikha/static/js/main.e8f03789.chunk.js"
   },
   {
