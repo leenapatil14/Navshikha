@@ -25,3 +25,14 @@
 .alignCenter{
   text-align: center !important;
 }
+.gistClass{
+  margin: 2% 10% !important;
+}
+.gistClass >iframe{
+  max-height: 200px;
+}
+@media (max-width:424px){
+  .gistClass{
+    margin:  0% !important;
+  }
+}

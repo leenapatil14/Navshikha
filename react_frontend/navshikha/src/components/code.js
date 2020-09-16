@@ -8,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import Gist from 'react-gist';
 const useStyles = theme => ({
     root: {
         flexGrow: 1,
@@ -58,10 +58,10 @@ class Code extends Component {
                         <CardActionArea>
 
                             <CardContent>
-                                <Typography gutterBottom variant="h6" component="div" color="textSecondary">
+                                <Typography gutterBottom variant="h6" component="div" color="primary">
                                     {story.title}
                                 </Typography>
-                                <Typography  gutterBottom variant="subtitle2" component="div" >
+                                <Typography gutterBottom variant="subtitle2" component="div" >
                                     <div><b className="gradientText">Given </b></div>{story.given}
                                 </Typography>
                                 <Typography gutterBottom variant="subtitle2" component="div">
@@ -84,14 +84,27 @@ class Code extends Component {
 
                                             ))}
                                             <Typography variant="body2" component="div" color="primary">
-                                                Analysis 
+                                                Analysis
                                             </Typography>
-                                            {approach.willwork.map((will_,index__) => (
-                                            <Typography gutterBottom variant="subtitle2" component="p" color="textSecondary" key={index__}>
-                                                {will_}
-                                            </Typography>
+                                            {approach.willwork.map((will_, index__) => (
+                                                <Typography gutterBottom variant="subtitle2" component="p" color="textSecondary" key={index__}>
+                                                    {will_}
+                                                </Typography>
+
 
                                             ))}
+                                            {approach.code?
+                                            <div>
+                                            <Typography variant="body2" component="div" color="primary">
+                                                Code
+                                        </Typography>
+                                        <Grid container>
+                                            <Grid item xs={12} sm={12} lg={12} className="gistClass">
+                                            <Gist id={approach.code.id} file={approach.code.filename}/>
+                                            </Grid>
+
+                                        </Grid>
+                                        </div>:<div></div>}
                                             <Divider></Divider>
                                         </div>
                                     ))}

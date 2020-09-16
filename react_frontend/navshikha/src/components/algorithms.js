@@ -98,12 +98,12 @@ class Algorithms extends Component {
 
                             </CardContent>
                         </CardActionArea>
-                        <CardActions>
+                        {/* <CardActions>
                             <Typography gutterBottom variant="subtitle2" color="textSecondary">
                                 {new Date(story.date._seconds*1000).toLocaleDateString()}
                             </Typography>
                             
-                        </CardActions>
+                        </CardActions> */}
 
                     </Card>
                 </Grid>

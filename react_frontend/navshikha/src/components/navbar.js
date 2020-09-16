@@ -188,9 +188,9 @@ const {classes} = this.props;
                     <ListItemIcon className={classes.toolbarText}><CodeTwoToneIcon /> </ListItemIcon>
                     <ListItemText classes={{primary:classes.listItemText}} primary="Leetcode Solutions" />
                   </ListItem>
-                  <ListItem button key="Daily" component={Link} to="/Navshikha/dailylogs">
+                  <ListItem button key="Daily" component={Link} to="/Navshikha/logs">
                     <ListItemIcon className={classes.toolbarText}><BookTwoToneIcon /> </ListItemIcon>
-                    <ListItemText classes={{primary:classes.listItemText}} primary="Daily Logs" />
+                    <ListItemText classes={{primary:classes.listItemText}} primary="Logs" />
                   </ListItem>
                   <ListItem button key="Travel" component={Link} to="/Navshikha/travel">
                     <ListItemIcon className={classes.toolbarText}><FlightTwoToneIcon /> </ListItemIcon>

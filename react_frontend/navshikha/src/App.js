@@ -8,7 +8,6 @@ import Portfolio from './components/portfolio';
 import Travel from './components/travel';
 import DailyLogs from './components/daily';
 import Algorithms from './components/algorithms';
-import Home from './components/home';
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -35,7 +34,7 @@ function App() {
           {/* <Route exact path="/" component={Home}></Route> */}
           <Route exact path="/Navshikha/" component={Portfolio}></Route>
           <Route exact path="/Navshikha/travel" component={Travel}></Route>
-          <Route exact path="/Navshikha/dailylogs" component={DailyLogs}></Route>
+          <Route exact path="/Navshikha/logs" component={DailyLogs}></Route>
           <Route exact path="/Navshikha/algorithms" component={Algorithms}></Route>
         </Switch>
         </div>
