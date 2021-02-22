@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Story from './story';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+//images
 import pune1 from '../images/pune/1.jpeg';
 import pune2 from '../images/pune/2.jpeg';
 import pune3 from '../images/pune/3.jpeg';
@@ -36,7 +37,7 @@ import nyc11 from '../images/nyc/9.jpeg';
 import nyc12 from '../images/nyc/3.jpeg';
 import nyc13 from '../images/nyc/6.jpeg';
 import lacuna1 from '../images/Lacuna.jpg';
-
+//ToDo- make dynamic
 const stories = [{
     'name': 'Trip to Pune',
     'bg': pune1,
@@ -51,8 +52,6 @@ const stories = [{
             { 'image': puneconclusion, 'desc': 'This short, unplanned and beautiful trip helped me get refreshed from all the stress I had before. I was fully ready to face whatever comes not the way later. The best part about Pune is its food (if you love spicy food, you should certainly not miss visiting Pune), the people, and of course its rich history. ' }]
     },
     'images': [pune1, pune2, pune3, pune4, pune6, pune7, pune8, pune9]
-
-
 },
 {
     'name': 'Trip to New York',
@@ -109,8 +108,6 @@ const useStyles = theme => ({
         cursor: 'pointer',
         width: '100%'
     }
-
-
 });
 
 class Travel extends Component {
@@ -122,10 +119,9 @@ class Travel extends Component {
             showStory: false
         }
         this.handleChange = this.handleChange.bind(this)
-
     }
+    //switch between stories
     handleChange(story) {
-        //console.log(story)
         this.setState({
             current: story,
             showStory: true
@@ -139,7 +135,7 @@ class Travel extends Component {
                 showStory: false
             })
         };
-
+        //display each story component
         const cards = stories.map(story => (
             <Grid item xs={12} sm={6} lg={4} md={4} key={story.name} >
                 <Card className={classes.cardRoot}
@@ -162,9 +158,6 @@ class Travel extends Component {
                 </Card>
             </Grid>
         ));
-
-
-
 
         return (
             <div className={classes.root}>

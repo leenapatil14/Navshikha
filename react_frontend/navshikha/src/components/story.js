@@ -3,10 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
@@ -26,41 +23,30 @@ const useStyles = theme => ({
     images: {
         width: '100%'
     }
-
-
 });
 class Story extends Component {
     constructor(props) {
         super(props);
-
     }
-
-
 
     render() {
         const { classes } = this.props;
         const story = this.props.story.story;
-        //console.log(story);
         return (
             <div>
 
-                <Grid item  >
+                <Grid item >
                     <Card className={classes.cardRoot} >
                         <CardActionArea>
-
                             <CardContent>
-                                <Typography gutterBottom variant="body1" component="div">
-                                    {story.name}
-                                </Typography>
-                                <Typography color="textSecondary" variant="body2" component="div" >
-                                    {story.paragraphs.intro}
-                                </Typography>
+                                <Typography gutterBottom variant="body1" component="div">{story.name}</Typography>
+                                <Typography color="textSecondary" variant="body2" component="div" >{story.paragraphs.intro}</Typography>
+                                {/* display stories */}
                                 {story.paragraphs.details.map(data =>
                                     <div key={data.desc}>
                                         <br />
                                         {data.image ?
-                                            <Grid container justify="center"
-                                                alignItems="center">
+                                            <Grid container justify="center" alignItems="center">
                                                 <Grid item xs={12} md={6}>
                                                     <Typography color="textSecondary" variant="body2"  >
                                                         {data.desc}
@@ -71,39 +57,29 @@ class Story extends Component {
                                                 </Grid>
                                             </Grid>
                                             :
-                                            <Grid container justify="center"
-                                                alignItems="center">
+                                            <Grid container justify="center" alignItems="center">
                                                 <Grid item xs={12} md={12}>
                                                     <Typography color="textSecondary" variant="body2" component="div" >
                                                         {data.desc}
                                                     </Typography>
-
                                                 </Grid>
 
                                             </Grid>
                                         }
-
                                     </div>)}
 
                                 <GridList className={classes.gridList} cols={3}>
                                     {story.images.map((tile) => (
-                                        <GridListTile key={tile} >
-                                            <img src={tile} />
-                                        </GridListTile>
+                                        <GridListTile key={tile} ><img src={tile} /></GridListTile>
                                     ))}
                                 </GridList>
                             </CardContent>
                         </CardActionArea>
-
                     </Card>
                 </Grid>
             </div>
         );
     }
 }
-
-Story.propTypes = {
-
-};
 
 export default withStyles(useStyles)(Story);

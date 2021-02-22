@@ -16,13 +16,10 @@ const useStyles = theme => ({
     root: {
         backgroundColor: theme.palette.background.paper,
         color: theme.palette.text.secondary,
-        //padding:15
-
     },
     cardRoot: {
         margin: 15,
         textAlign: 'center',
-
     },
     backArrow: {
         margin: 0,
@@ -38,9 +35,9 @@ const useStyles = theme => ({
         padding: 15,
         textAlign: 'center'
     },
-    date:{
-        color:'#D5268F',
-        textAlign:'right'
+    date: {
+        color: '#D5268F',
+        textAlign: 'right'
     }
 })
 class Algorithms extends Component {
@@ -67,7 +64,6 @@ class Algorithms extends Component {
         })
     }
     handleChange(story) {
-        //console.log(story)
         this.setState({
             current: story,
             showStory: true
@@ -90,21 +86,12 @@ class Algorithms extends Component {
                     <Card className={classes.cardRoot}
                         onClick={() => this.handleChange({ story })}>
                         <CardActionArea>
-
                             <CardContent>
                                 <Typography gutterBottom variant="subtitle2" component="div" color="textSecondary">
                                     {story.title}
                                 </Typography>
-
                             </CardContent>
                         </CardActionArea>
-                        {/* <CardActions>
-                            <Typography gutterBottom variant="subtitle2" color="textSecondary">
-                                {new Date(story.date._seconds*1000).toLocaleDateString()}
-                            </Typography>
-                            
-                        </CardActions> */}
-
                     </Card>
                 </Grid>
             ))
